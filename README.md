@@ -8,8 +8,7 @@
 - Отношение скоростей: 0.82x
 
 ### 2. Complex-profiling
-![график](![image](https://github.com/user-attachments/assets/1e48b54c-09dc-4836-9009-f8d56d92c8f4)
-)
+![график](![image]([https://github.com/user-attachments/assets/1e48b54c-09dc-4836-9009-f8d56d92c8f4](https://github.com/KOTorCAT/Progr/blob/main/performance_comparison.png)))
 
 
 
