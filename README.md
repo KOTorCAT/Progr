@@ -8,7 +8,9 @@
 - Отношение скоростей: 0.82x
 
 ### 2. Complex-profiling
-![Uploading image.png…]()
+![график](![image](https://github.com/user-attachments/assets/1e48b54c-09dc-4836-9009-f8d56d92c8f4)
+)
+
 
 
 ## Выводы
