@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Курсы валют</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Курсы валют ЦБ РФ</h1>
+    <table>
+        <tr>
+            <th>Код</th>
+            <th>Валюта</th>
+            <th>Курс</th>
+            <th>Дата</th>
+        </tr>
+        {% for code, data in rates.items() %}
+        <tr>
+            <td>{{ code }}</td>
+            <td>{{ data.name }}</td>
+            <td>{{ "%.4f"|format(data.value) }}</td>
+            <td>{{ data.date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
