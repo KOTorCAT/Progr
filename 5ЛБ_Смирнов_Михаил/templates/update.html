@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Currencies</title>
+</head>
+<body>
+    <h1>Update Tracked Currencies</h1>
+    <form method="POST">
+        <label for="codes">Currency codes (space separated):</label>
+        <input type="text" id="codes" name="codes" 
+               value="{{ ' '.join(current_codes) }}">
+        <button type="submit">Update</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to rates</a>
+</body>
+</html>

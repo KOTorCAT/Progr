@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Rates</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Current Currency Rates</h1>
+    <table>
+        <tr>
+            <th>Code</th>
+            <th>Currency</th>
+            <th>Rate</th>
+            <th>Updated</th>
+        </tr>
+        {% for rate in rates %}
+        <tr>
+            <td>{{ rate.code }}</td>
+            <td>{{ rate.name }}</td>
+            <td>{{ "%.2f"|format(rate.value / rate.nominal) }}</td>
+            <td>{{ rate.updated_at.strftime('%Y-%m-%d %H:%M') }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{{ url_for('update') }}">Update currencies</a>
+</body>
+</html>
